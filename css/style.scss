@@ -1,0 +1,41 @@
+@import "globals";
+@import "colors";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$radius: 1.2rem;
+@import "card";
+
+body {
+  background-color: $pale-blue;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+}
+
+@media screen and (min-width:768px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+}
+
+/* footer */
+.attribution {
+  position: absolute;
+  bottom: .2rem;
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
